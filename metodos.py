@@ -1,29 +1,20 @@
-from inventario import jogos
+import os
 
 @staticmethod
-def procurar_jogo(nome_jogo):
-    if any(nome_jogo == nome for nome in jogos):
-        return True
-    else:
-        return False
+def limpar_tela():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-@staticmethod
-def verificar_lista():
-    if len(jogos) > 0:
-        return True
-    else:
-        return False
-    
 @staticmethod
 def continuar():
+    limpar_tela()
     while True:
         try:
-            opc = int(input(' Deseja continuar?\n1 - Sim\n2 - Não\n'))
+            opc = int(input('Deseja continuar?\n1 - Sim\n2 - Não\n'))
             if opc == 1:
                 return True
             elif opc == 2:
                 return False
             else:
-                print(' Opção inválida! Tente novamente.')
+                print('\nOpção inválida! Tente novamente.\n')
         except:
-            print(' Por favor, insira um valor inteiro.')
+            print('\nPor favor, insira um valor inteiro.\n')
