@@ -1,0 +1,7 @@
+Objetivo: Criar um sistema de inventário para uma coleção de jogos.
+
+Requisitos:
+
+Criar uma classe Jogo com atributos: título, plataforma, gênero e ano de lançamento.
+Criar uma classe InventarioDeJogos que pode adicionar, remover e listar jogos.
+Adicionar métodos para buscar jogos por título ou plataforma, e listar jogos por gênero ou ano de lançamento.
